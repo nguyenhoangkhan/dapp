@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Encode Sans", sans-serif;
+}
+.footer-overlay {
+  @apply w-full absolute left-0 right-0 top-0 bottom-0;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 1, 1, 0.01) 0%,
+    rgba(1, 1, 1, 0.2) 32.81%,
+    rgba(1, 1, 1, 0.5) 53.65%,
+    rgba(1, 1, 1, 0.8) 72.4%,
+    #010101 100%
+  );
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
