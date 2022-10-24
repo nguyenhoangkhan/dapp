@@ -8,7 +8,18 @@ body {
   font-family: "Encode Sans", sans-serif;
   overflow-x: hidden;
 }
-
+@media (max-width: 1024px) {
+  .lottie-rocket-banner > div {
+    width: 450px !important;
+    height: 450px !important;
+  }
+}
+@media (max-width: 768px) {
+  .lottie-rocket-banner > div {
+    width: 350px !important;
+    height: 350px !important;
+  }
+}
 .footer-overlay {
   @apply w-full absolute left-0 right-0 top-0 bottom-0;
   background: linear-gradient(

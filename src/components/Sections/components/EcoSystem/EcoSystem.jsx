@@ -36,24 +36,20 @@ const EcoSystem = ({ ecoLeft, ecoRight }) => {
             ))}
           </div>
           <div className="eco-spaceship">
-            {/* <Image
-              src="/images/eco-spaceship.png"
-              alt=""
-              width={210}
-              height={430}
-            ></Image> */}
-            <Lottie
-              options={{
-                loop: true,
-                autoplay: true,
-                animationData: rocket,
-                rendererSettings: {
-                  preserveAspectRatio: "xMidYMid slice",
-                },
-              }}
-              height={430}
-              width={210}
-            />
+            <div className="pointer-events-none">
+              <Lottie
+                options={{
+                  loop: true,
+                  autoplay: true,
+                  animationData: rocket,
+                  rendererSettings: {
+                    preserveAspectRatio: "xMidYMid slice",
+                  },
+                }}
+                height={430}
+                width={210}
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-[155px] lg:gap-5 max-w-full">
             {ecoRight.map((item, idx) => (

@@ -1,4 +1,6 @@
+import Lottie from "react-lottie";
 import { bannerList, iconHeaders } from "../../constant";
+import rocketBanner from "../../lotties/rocketBanner.json";
 
 const Banner = () => {
   return (
@@ -6,7 +8,7 @@ const Banner = () => {
       className="bg-full-w h-[793px] bg-cover bg-no-repeat lg:h-fit lg:pb-[30px]"
       style={{ backgroundImage: "url(/images/banner.png)" }}
     >
-      <div className="pt-[140px] grid grid-cols-2 place-items-center container lg:grid-cols-1 sm:pt-[80px]">
+      <div className="pt-[140px] grid grid-cols-2 place-items-center container lg:grid-cols-1 sm:pt-[90px]">
         <div className="lg:order-2">
           <h1 className="text-[40px] tracking-tight font-semibold text-white flex items-center 2xl:items-start gap-[12px] 2xl:flex-col xl:items-start sm:text-[20px] sm:mt-[20px]">
             The one-way trip to{" "}
@@ -27,10 +29,25 @@ const Banner = () => {
             Buy Aptosmoon
           </button>
         </div>
-        <div
+        {/* <div
           className="w-[540px] h-[540px] xl:w-[400px] xl:h-[400px] lg:w-[300px] lg:h-[300px] bg-cover lg:order-1 sm:w-[240px] sm:h-[240px]"
           style={{ backgroundImage: "url(/images/iIlustration.png)" }}
-        ></div>
+        ></div> */}
+        <div className="pointer-events-none lottie-rocket-banner">
+          <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: rocketBanner,
+              interactivity: false,
+              rendererSettings: {
+                preserveAspectRatio: "xMidYMid slice",
+              },
+            }}
+            height={540}
+            width={540}
+          />
+        </div>
       </div>
       <ul className="w-[1200px] h-[106px] container flex justify-evenly items-center mx-auto border-[2px] border-primary-blue rounded-[100px] bg-black-1 relative translate-y-1/2 max-w-full md:hidden  lg:translate-y-0 lg:mt-[30px]">
         {bannerList.map((item, idx) => (
