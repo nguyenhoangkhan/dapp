@@ -17,14 +17,17 @@ const ConntectWalltet = () => {
                 "linear-gradient(180deg, rgba(1, 1, 1, 0.01) 0%, rgba(1, 1, 1, 0.2) 32.81%, rgba(1, 1, 1, 0.5) 57.81%, rgba(1, 1, 1, 0.8) 76.56%, #010101 100%)",
             }}
           ></div>
-          <div className="md:px-[16px] overflow-hidden w-fit mx-auto relative z-[1] translate-y-[100px]  grid grid-cols-[repeat(2,540px)] xl:grid-cols-[repeat(2,450px)] lg:grid-cols-1 gap-[65px] ">
+          <div className="md:px-[16px] overflow-hidden w-fit mx-auto relative z-[1] translate-y-[200px] sm:translate-y-[150px]  grid grid-cols-[repeat(2,540px)] xl:grid-cols-[repeat(2,450px)] lg:grid-cols-1 gap-[65px] sm:w-full">
             <div className="border-[2px] overflow-hidden rounded-[16px] border-primary-blue h-[650px] xl:order-2">
               <div className="bg-green   h-[68px] flex justify-center items-center text-[24px] font-semibold text-white">
                 Public Sale Information
               </div>
-              <ul className="p-[36px] flex flex-col gap-[32px]">
+              <ul className="p-[36px] md:p-[20px]  flex flex-col gap-[32px]">
                 {saleInformationsList.map((item, idx) => (
-                  <li key={idx} className="grid grid-cols-2 gap-x-[80px] ">
+                  <li
+                    key={idx}
+                    className="grid grid-cols-[1fr,2fr] gap-x-[80px] sm:grid-cols-1 "
+                  >
                     <div className="font-semibold text-white ">
                       {item.title}
                     </div>
@@ -39,7 +42,7 @@ const ConntectWalltet = () => {
               <div className="bg-green   h-[68px] flex justify-center items-center text-[24px] font-semibold text-white">
                 Join Public Sale
               </div>
-              <div className="p-[36px]">
+              <div className="p-[36px] md:p-[20px]">
                 <div className="uppercase text-red text-center font-semibold mb-[8px]">
                   close in
                 </div>

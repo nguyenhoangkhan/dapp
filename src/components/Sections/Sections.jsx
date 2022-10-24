@@ -39,9 +39,12 @@ const Sections = () => {
         {sectionsList.map((item, idx) => (
           <div
             key={idx}
-            className="grid grid-cols-2 gap-x-[60px] place-items-center lg:grid-cols-1 lg:gap-[30px] lg:place-items-center"
+            className="grid grid-cols-2 gap-x-[60px] place-items-center lg:grid-cols-1 lg:gap-[30px] lg:place-items-center "
           >
-            <div style={{ order: `${item.content.order}` }}>
+            <div
+              className="sections-work-content "
+              style={{ order: `${item.content.order}` }}
+            >
               {item.content.img ? (
                 <div
                   className={`pt-[8%] bg-center lg:w-full max-w-full bg-cover ${
@@ -53,15 +56,18 @@ const Sections = () => {
                 ""
               )}
               <div className={`${item.content.order === 1 ? "text-end " : ""}`}>
-                <p className="text-[32px] font-semibold text-primary-blue py-[16px]">
+                <p className="text-[32px] font-semibold text-primary-blue py-[16px] lg:text-start">
                   {item.content.title ? item.content.title : ""}
                 </p>
-                <p className="text-white leading-[150%] max-w-full sm:text-[14px]">
+                <p className="text-white leading-[150%] max-w-full sm:text-[14px] lg:text-start">
                   {item.content.para}
                 </p>
               </div>
             </div>
-            <div style={{ order: `${item.img.order}` }}>
+            <div
+              className="sections-work-img"
+              style={{ order: `${item.img.order}` }}
+            >
               <Image
                 className="object-cover"
                 width={item.img.width}
@@ -90,14 +96,18 @@ const Sections = () => {
       </div>
       <div className="mt-[100px] md:block hidden lg:mt-[80px] relative z-[1]">
         <div
-          className="pt-[87.5%] bg-cover "
+          className="pt-[131.6%] bg-cover "
           style={{ backgroundImage: "url(/images/table-mobile.png)" }}
         ></div>
       </div>
       <div className="mt-[100px] lg:mt-[80px] sm:mt-[60px] relative z-[1]">
         <div
-          className="pt-[82%] bg-cover"
+          className="pt-[82%] bg-cover md:hidden"
           style={{ backgroundImage: "url(/images/pie-chart.png)" }}
+        ></div>
+        <div
+          className="pt-[105.7%] bg-cover md:block hidden"
+          style={{ backgroundImage: "url(/images/pie-chart-mobile.png)" }}
         ></div>
       </div>
       <div

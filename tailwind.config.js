@@ -13,6 +13,8 @@ module.exports = {
         green: { DEFAULT: "#156B56" },
         red: "#EB4141",
         gray: { DEFAULT: "#A7ADB2" },
+        yellow: { DEFAULT: "#f7b735" },
+        "shadow-btn": "0px 0px 20px 0px rgb(6 212 191)",
       },
     },
     screens: {

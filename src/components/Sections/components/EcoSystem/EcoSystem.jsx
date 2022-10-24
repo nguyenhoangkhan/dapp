@@ -25,7 +25,7 @@ const EcoSystem = ({ ecoLeft, ecoRight }) => {
         <div className="grid grid-cols-3 place-items-center lg:grid-cols-1 relative z-[1]">
           <div className="flex flex-col gap-[155px] lg:gap-5 max-w-full">
             {ecoLeft.map((item, idx) => (
-              <div key={idx} className="text-end max-w-full">
+              <div key={idx} className="text-end max-w-full lg:text-center">
                 <h3 className="mb-[12px] font-semibold text-[20px] text-primary-blue">
                   {item.title}
                 </h3>
@@ -53,8 +53,8 @@ const EcoSystem = ({ ecoLeft, ecoRight }) => {
           </div>
           <div className="flex flex-col gap-[155px] lg:gap-5 max-w-full">
             {ecoRight.map((item, idx) => (
-              <div key={idx} className="text-start">
-                <h3 className="mb-[12px] font-semibold text-[20px] text-primary-blue">
+              <div key={idx} className="text-start lg:text-center">
+                <h3 className="mb-[12px] font-semibold text-[20px] text-primary-blue ">
                   {item.title}
                 </h3>
                 <p className="text-neutral-white w-[400px] mr-auto max-w-full">
@@ -65,10 +65,7 @@ const EcoSystem = ({ ecoLeft, ecoRight }) => {
           </div>
         </div>
       </div>
-      <button
-        className="mx-auto h-[48px] w-[152px] bg-primary-blue text mt-[110px] font-semibold text-text flex items-center justify-center rounded-[8px] lg:mt-[60px]"
-        style={{ boxShadow: "0px 0px 20px 0px rgb(6 212 191)" }}
-      >
+      <button className="mx-auto h-[48px] w-[152px] bg-primary-blue text mt-[110px] font-semibold text-text flex items-center justify-center rounded-[8px] lg:mt-[60px] btn">
         Get Incubated
       </button>
     </>

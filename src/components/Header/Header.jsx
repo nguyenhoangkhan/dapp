@@ -29,7 +29,7 @@ const Header = () => {
           <div className="flex items-center gap-x-[16px] h-full lg:hidden">
             {iconHeaders.map((item) => (
               <button
-                className="h-[40px] hover:scale-105 duration-400 w-[40px] rounded-full border-[1px] border-neutral-white flex justify-center items-center"
+                className="h-[40px] hover:scale-105 duration-300 transition-all w-[40px] rounded-full border-[1px] border-neutral-white flex justify-center items-center"
                 key={item.id}
               >
                 {item.svg}
@@ -38,8 +38,8 @@ const Header = () => {
           </div>
           <Link href="/connect-wallet">
             <a
-              className="w-[162px] h-[48px] hover:scale-105 duration-400 bg-primary-blue rounded-[8px]  font-semibold text-[16px] md:w-[140px] md:h-[40px] flex items-center justify-center"
-              style={{ boxShadow: "0px 0px 20px 0px rgb(6 212 191)" }}
+              className="w-[162px] h-[48px]  duration-300 transition-all bg-primary-blue rounded-[8px]  font-semibold text-[16px] md:w-[140px] md:h-[40px] flex items-center justify-center 
+              btn"
             >
               Connect Wallet
             </a>

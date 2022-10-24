@@ -22,10 +22,7 @@ const Banner = () => {
             of the development. Experience the best DEX aggregator, NFTs, and
             Metaverse world built on APTOS
           </p>
-          <button
-            className="w-[168px] h-[48px] mt-[40px] bg-primary-blue rounded-[8px] font-semibold text-[16px]"
-            style={{ boxShadow: "0px 0px 20px 0px rgb(6 212 191)" }}
-          >
+          <button className="w-[168px] h-[48px] mt-[40px] bg-primary-blue rounded-[8px] font-semibold text-[16px] btn">
             Buy Aptosmoon
           </button>
         </div>
@@ -52,37 +49,49 @@ const Banner = () => {
       <ul className="w-[1200px] h-[106px] container flex justify-evenly items-center mx-auto border-[2px] border-primary-blue rounded-[100px] bg-black-1 relative translate-y-1/2 max-w-full md:hidden  lg:translate-y-0 lg:mt-[30px]">
         {bannerList.map((item, idx) => (
           <li className="text-white flex flex-col" key={idx}>
-            {item.title}
-            {item.content ? <span>{item.content}</span> : ""}
+            <span
+              className={`font-semibold text-[14px] ${
+                bannerList.indexOf(item) === 1 && "text-primary-blue"
+              }`}
+            >
+              {item.title}
+            </span>
+            {item.content ? (
+              <span className="text-[16px]">{item.content}</span>
+            ) : (
+              ""
+            )}
           </li>
         ))}
       </ul>
       <div className="container hidden md:block">
-        <div className=" items-center gap-x-[16px] h-full flex mt-[20px]">
+        <div className=" items-center gap-x-[16px] h-full flex mt-[30px]">
           {iconHeaders.map((item) => (
             <button
-              className="h-[40px] hover:scale-105 duration-400 w-[40px] rounded-full border-[1px] border-neutral-white flex justify-center items-center"
+              className="h-[40px] hover:scale-105 duration-300 transition-all w-[40px] rounded-full border-[1px] border-neutral-white flex justify-center items-center"
               key={item.id}
             >
               {item.svg}
             </button>
           ))}
         </div>
-        <ul className="w-full gap-[8px] grid grid-cols-3  border-[2px] border-primary-blue rounded-[12px] bg-black-1 relative max-w-full h-fit p-[12px]  mt-[20px] sm:justify-start ">
-          <li className="text-neutral-white text-[14px]">Token Information</li>
-          <li className="text-primary-blue text-[14px] text-center">
+        <ul className="w-full gap-[8px] grid grid-cols-3  border-[2px] border-primary-blue rounded-[12px] bg-black-1 relative max-w-full h-fit p-[12px]  mt-[40px] sm:justify-start ">
+          <li className="text-neutral-white text-[14px] font-semibold">
+            Token Information
+          </li>
+          <li className="text-primary-blue text-[14px] text-center font-semibold">
             AptosMoon (APM)
           </li>
           <li className="flex flex-col text-neutral-white text-[14px] text-end">
-            Network
+            <span className="font-semibold"> Network</span>
             <p>Aptos</p>
           </li>
           <li className="flex flex-col text-neutral-white col-span-2 text-[14px]">
-            Smart contract address
+            <span className="font-semibold"> Smart contract address</span>
             <p>0xd74b78209aa45bc73208dgh667826gb</p>
           </li>
           <li className="flex flex-col text-neutral-white text-end  text-[14px]">
-            DECIMALS
+            <span className="font-semibold">Decimals</span>
             <p>9</p>
           </li>
         </ul>

@@ -5,16 +5,17 @@ const Footer = () => {
   return (
     <footer>
       <div
-        className="w-full bg-w-full pt-[25%] bg-center bg-cover relative "
+        className="w-full bg-w-full pt-[25%] bg-center bg-cover relative p-[20px]"
         style={{
           backgroundImage: "url(/images/footer.png)",
         }}
       >
         <div className="footer-overlay"></div>
-        <div className="container flex justify-between absolute bottom-[24px] left-[60px]  lg:static lg:translate-y-[-14px]">
+        <div className="container flex justify-between lg:static lg:translate-y-[-14px] sm:flex-col mx-auto">
           <div className="text-white">
             {" "}
-            Copyright @ <span className="text-primary-blue">
+            Copyright Ⓒ{" "}
+            <span className="text-primary-blue font-semibold">
               AptosMoon
             </span>{" "}
           </div>
