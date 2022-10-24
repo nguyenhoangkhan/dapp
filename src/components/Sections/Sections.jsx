@@ -85,7 +85,7 @@ const Sections = () => {
               height={480}
             ></Image>
           </div>
-          <div class="grid grid-cols-3 place-items-center ">
+          <div className="grid grid-cols-3 place-items-center ">
             <div className="flex flex-col gap-[155px]">
               {ecoLeft.map((item, idx) => (
                 <div key={idx} className="text-end">

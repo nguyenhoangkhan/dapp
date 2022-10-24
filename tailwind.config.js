@@ -12,10 +12,28 @@ module.exports = {
         black: { DEFAULT: "#010101", 1: "#141414" },
       },
     },
+    screens: {
+      "2xl": { max: "1535px" },
+
+      xl: { max: "1279px" },
+
+      lg: { max: "1023px" },
+
+      md: { max: "798px" },
+
+      sm: { max: "639px" },
+    },
     container: {
       center: true,
       screens: {
-        "2xl": "1320px",
+        "2xl": "1400px",
+        xl: "1279px",
+        lg: "1023px",
+        md: "798px",
+        sm: "649px",
+      },
+      padding: {
+        DEFAULT: "16px",
       },
     },
   },

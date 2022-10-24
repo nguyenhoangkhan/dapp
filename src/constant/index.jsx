@@ -408,3 +408,5 @@ export const tokenomicsList = [
 ];
 
 export const footerList = ["Privacy Policy", "Terms & Condition", "Cookies"];
+
+export const bannerListMobile = [];
