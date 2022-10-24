@@ -11,7 +11,7 @@ const Footer = () => {
         }}
       >
         <div className="footer-overlay"></div>
-        <div className="container flex justify-between lg:static lg:translate-y-[-14px] sm:flex-col mx-auto">
+        <div className="container flex justify-between lg:static lg:translate-y-[8px] sm:flex-col mx-auto">
           <div className="text-white">
             {" "}
             Copyright Ⓒ{" "}
