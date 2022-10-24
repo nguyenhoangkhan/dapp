@@ -1,11 +1,9 @@
-import Content from "../components/Content";
-import Header from "../components/Header";
+import HomePage from "../components/HomePage";
 
 export default function Home() {
   return (
     <div>
-      <Header />
-      <Content />
+      <HomePage />
     </div>
   );
 }

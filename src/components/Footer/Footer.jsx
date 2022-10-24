@@ -5,13 +5,13 @@ const Footer = () => {
   return (
     <footer>
       <div
-        className="w-full bg-w-full h-[362px] bg-cover relative"
+        className="w-full bg-w-full pt-[25%] bg-center bg-cover relative "
         style={{
           backgroundImage: "url(/images/footer.png)",
         }}
       >
         <div className="footer-overlay"></div>
-        <div className="container flex justify-between absolute bottom-[24px] left-[60px]">
+        <div className="container flex justify-between absolute bottom-[24px] left-[60px]  lg:static lg:translate-y-[-14px]">
           <div className="text-white">
             {" "}
             Copyright @ <span className="text-primary-blue">

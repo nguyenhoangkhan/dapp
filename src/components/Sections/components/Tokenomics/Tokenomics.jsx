@@ -4,7 +4,7 @@ const Tokenomics = ({ tokenomicsList }) => {
       <h1 className="font-semibold text-[32px] text-white text-center">
         Tokenomics
       </h1>
-      <div className="grid grid-cols-3 gap-[60px] mt-[60px]">
+      <div className="grid grid-cols-3 gap-[60px] mt-[60px] lg:grid-cols-2 sm:grid-cols-1">
         {tokenomicsList.map((item, idx) => (
           <div
             key={idx}

@@ -32,7 +32,7 @@ const Banner = () => {
           style={{ backgroundImage: "url(/images/iIlustration.png)" }}
         ></div>
       </div>
-      <ul className="w-[1200px] h-[106px] flex justify-evenly items-center mx-auto border-[2px] border-primary-blue rounded-[100px] bg-black-1 relative translate-y-1/2 max-w-full md:hidden lg:w-[766px] lg:translate-y-0 lg:mt-[30px]">
+      <ul className="w-[1200px] h-[106px] container flex justify-evenly items-center mx-auto border-[2px] border-primary-blue rounded-[100px] bg-black-1 relative translate-y-1/2 max-w-full md:hidden  lg:translate-y-0 lg:mt-[30px]">
         {bannerList.map((item, idx) => (
           <li className="text-white flex flex-col" key={idx}>
             {item.title}
@@ -53,8 +53,10 @@ const Banner = () => {
         </div>
         <ul className="w-full gap-[8px] grid grid-cols-3  border-[2px] border-primary-blue rounded-[12px] bg-black-1 relative max-w-full h-fit p-[12px]  mt-[20px] sm:justify-start ">
           <li className="text-neutral-white text-[14px]">Token Information</li>
-          <li className="text-primary-blue text-[14px]">AptosMoon (APM)</li>
-          <li className="flex flex-col text-neutral-white text-[14px]">
+          <li className="text-primary-blue text-[14px] text-center">
+            AptosMoon (APM)
+          </li>
+          <li className="flex flex-col text-neutral-white text-[14px] text-end">
             Network
             <p>Aptos</p>
           </li>
@@ -62,7 +64,7 @@ const Banner = () => {
             Smart contract address
             <p>0xd74b78209aa45bc73208dgh667826gb</p>
           </li>
-          <li className="flex flex-col text-neutral-white  text-[14px]">
+          <li className="flex flex-col text-neutral-white text-end  text-[14px]">
             DECIMALS
             <p>9</p>
           </li>

@@ -36,12 +36,14 @@ const Header = () => {
               </button>
             ))}
           </div>
-          <button
-            className="w-[162px] h-[48px] hover:scale-105 duration-400 bg-primary-blue rounded-[8px]  font-semibold text-[16px] md:w-[140px] md:h-[40px]"
-            style={{ boxShadow: "0px 0px 20px 0px rgb(6 212 191)" }}
-          >
-            Connect Wallet
-          </button>
+          <Link href="/connect-wallet">
+            <a
+              className="w-[162px] h-[48px] hover:scale-105 duration-400 bg-primary-blue rounded-[8px]  font-semibold text-[16px] md:w-[140px] md:h-[40px] flex items-center justify-center"
+              style={{ boxShadow: "0px 0px 20px 0px rgb(6 212 191)" }}
+            >
+              Connect Wallet
+            </a>
+          </Link>
         </div>
       </div>
     </header>

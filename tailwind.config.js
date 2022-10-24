@@ -10,6 +10,9 @@ module.exports = {
         "primary-blue": "#06D4BF",
         text: "#22313F",
         black: { DEFAULT: "#010101", 1: "#141414" },
+        green: { DEFAULT: "#156B56" },
+        red: "#EB4141",
+        gray: { DEFAULT: "#A7ADB2" },
       },
     },
     screens: {

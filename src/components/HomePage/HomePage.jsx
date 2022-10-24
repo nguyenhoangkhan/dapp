@@ -1,13 +1,14 @@
 import Banner from "../Banner";
-import Footer from "../Footer";
+import Container from "../Container";
 import Sections from "../Sections";
 
 const Content = () => {
   return (
     <div className="bg-black">
-      <Banner />
-      <Sections />
-      <Footer />
+      <Container>
+        <Banner />
+        <Sections />
+      </Container>
     </div>
   );
 };

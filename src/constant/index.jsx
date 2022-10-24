@@ -231,6 +231,47 @@ export const phasesList = [
     ],
   },
 ];
+export const phasesListMobile = [
+  {
+    img: "/images/phase1mobile.png",
+    title: "Q3 + Q4 - 2022",
+    list: [
+      "Core team assembled",
+      "Contract audit by Hacken/Certik",
+      "AptosMoon (APM) IDO & Public Token Launch",
+      "Aptos ecosystem engagement",
+      "Get trending on DexTools, Poocoin, Bogged Finance",
+      "Post launch Marketing campaign",
+      "Featuring on Coinmarketcap, Coingecko,Watcher Guru, Dappradar, etc.",
+    ],
+  },
+  {
+    img: "/images/phase2mobile.png",
+    title: "Q1 - 2023",
+    list: [
+      "Partner with Aptos ecosystem projects (DEXes, Oracles)",
+      "Staking & Farming",
+      "Mainnet Release of AptosMoon DEXl & Aggregator.",
+      "NFT Game Testnet release for Beta Testers",
+      "Chainlink VRF integration",
+      "Run advertising campaigns with other media partners",
+      "Deep Dive article featured on CMC and CoinTelegraph",
+      "Cooperate with Gate NFT, Huobi NFT to launch ‘ AptosMoon first INO",
+    ],
+  },
+  {
+    img: "/images/phase3mobile.png",
+    title: "Q2 - 2023",
+    list: [
+      "Staking, Voting, Launchpad V1",
+      "AptosMoon NFT Game mainnet release",
+      "Deposit and In-play Betting",
+      "Cooperate with PR Firm that helped more than 1000 tech companies such as Celsius, Bancor, Waves, etc.",
+      "Launch 1st Incubated Project on AptosMoon Launchpad through Marketing & Community Support activities",
+      "Releasing first AptosMoon Metaverse experience",
+    ],
+  },
+];
 export const tokenomicsList = [
   {
     svg: (
@@ -409,4 +450,13 @@ export const tokenomicsList = [
 
 export const footerList = ["Privacy Policy", "Terms & Condition", "Cookies"];
 
-export const bannerListMobile = [];
+export const saleInformationsList = [
+  { title: "START TIME", content: "Sat, 22 Oct 2022 12:00:00 GMT" },
+  { title: "END TIME", content: "Sun, 23 Oct 2022 12:00:00 GMT" },
+  { title: "TOTAL AMOUNT", content: "10,500,000 ADX" },
+  { title: "HARD CAP", content: "75,000 APT" },
+  { title: "RATE", content: "140 ADX/APT" },
+  { title: "LIST RATE", content: "140 ADX/APT" },
+  { title: "ALLOCATION", content: "500 APT" },
+  { title: "TGE", content: "100 %" },
+];
