@@ -108,10 +108,7 @@ const ConntectWalltet = () => {
                     </p>
                   </div>
                 </div>
-                <button
-                  className="w-[162px] h-[48px] hover:scale-105 duration-400 bg-primary-blue rounded-[8px]  font-semibold text-[16px] md:w-[140px] md:h-[40px] flex items-center justify-center mx-auto mt-[36px] mb-[40px]"
-                  style={{ boxShadow: "0px 0px 20px 0px rgb(6 212 191)" }}
-                >
+                <button className="w-[162px] h-[48px] hover:scale-105 duration-400 bg-primary-blue rounded-[8px]  font-semibold text-[16px] md:w-[140px] md:h-[40px] flex items-center justify-center mx-auto mt-[36px] mb-[40px] btn">
                   Buy Aptosmoon
                 </button>
               </div>
