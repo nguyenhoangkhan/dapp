@@ -4,7 +4,7 @@ import rocket from "../../../../lotties/rocket.json";
 const EcoSystem = ({ ecoLeft, ecoRight }) => {
   return (
     <>
-      <div className="mx-auto text-center">
+      <div className="mx-auto text-center relative z-[1]">
         <Image src="/images/eco.png" alt="" width={417} height={40}></Image>
         <p className="text-neutral-white mt-[16px] w-[600px] mx-auto max-w-full">
           AptosMoon is NOT just one project, this is the ecosystem that will
@@ -22,7 +22,7 @@ const EcoSystem = ({ ecoLeft, ecoRight }) => {
             height={480}
           ></Image>
         </div>
-        <div className="grid grid-cols-3 place-items-center lg:grid-cols-1">
+        <div className="grid grid-cols-3 place-items-center lg:grid-cols-1 relative z-[1]">
           <div className="flex flex-col gap-[155px] lg:gap-5 max-w-full">
             {ecoLeft.map((item, idx) => (
               <div key={idx} className="text-end max-w-full">

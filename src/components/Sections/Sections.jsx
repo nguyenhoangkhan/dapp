@@ -73,22 +73,28 @@ const Sections = () => {
           </div>
         ))}
       </div>
-      <div className="mt-[100px] lg:mt-[80px] ">
+      <div className="mt-[100px] lg:mt-[80px] sm:mt-[60px] ">
         <EcoSystem ecoLeft={ecoLeft} ecoRight={ecoRight} />
       </div>
-      <div className="mt-[100px] lg:mt-[80px]">
+      <div className="mt-[100px] lg:mt-[80px] sm:mt-[60px] ">
         <Phases phasesList={phasesList} />
       </div>
-      <div className="mt-[100px] lg:mt-[80px]">
+      <div className="mt-[100px] lg:mt-[80px] sm:mt-[60px] relative z-[1]">
         <Tokenomics tokenomicsList={tokenomicsList} />
       </div>
-      <div className="mt-[100px] lg:mt-[80px] relative z-[1]">
+      <div className="mt-[100px] lg:mt-[80px] sm:mt-[60px] relative z-[1]">
         <div
-          className="pt-[36.25%] bg-cover "
+          className="pt-[36.25%] bg-cover md:hidden "
           style={{ backgroundImage: "url(/images/table.png)" }}
         ></div>
       </div>
-      <div className="mt-[100px] lg:mt-[80px] relative z-[1]">
+      <div className="mt-[100px] md:block hidden lg:mt-[80px] relative z-[1]">
+        <div
+          className="pt-[87.5%] bg-cover "
+          style={{ backgroundImage: "url(/images/table-mobile.png)" }}
+        ></div>
+      </div>
+      <div className="mt-[100px] lg:mt-[80px] sm:mt-[60px] relative z-[1]">
         <div
           className="pt-[82%] bg-cover"
           style={{ backgroundImage: "url(/images/pie-chart.png)" }}
