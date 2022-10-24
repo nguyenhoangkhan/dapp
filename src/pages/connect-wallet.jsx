@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../components/Container";
 import { saleInformationsList } from "../constant";
 
 const ConntectWalltet = () => {
+  const [value, setValue] = useState("");
+
   return (
     <Container>
       <div className="bg-black h-[793px] lg:h-fit lg:pb-[200px]">
@@ -89,11 +91,16 @@ const ConntectWalltet = () => {
                     <div className="flex justify-between px-[16px] py-[13px] items-center border-gray rounded-[8px] border-[1px]">
                       <input
                         type="text"
+                        value={value}
+                        onChange={(e) => setValue(e.target.value)}
                         className="bg-transparent flex-1 outline-none border-none text-gray pr-[6px]"
                       />
-                      <span className="text-white text-[14px] uppercase">
+                      <button
+                        className="text-white text-[14px] uppercase"
+                        onClick={() => setValue(31080)}
+                      >
                         max
-                      </span>
+                      </button>
                     </div>
                     <p className="text-neutral-white text-[14px]">
                       You will receive:{" "}

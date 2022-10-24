@@ -23,7 +23,10 @@ const Footer = () => {
             {footerList.map((item, idx) => (
               <li key={idx} class>
                 <Link href="#">
-                  <a className="text-neutral-white"> {item}</a>
+                  <a className="text-neutral-white hover:text-primary-blue duration-300 transition-300 ">
+                    {" "}
+                    {item}
+                  </a>
                 </Link>
               </li>
             ))}
