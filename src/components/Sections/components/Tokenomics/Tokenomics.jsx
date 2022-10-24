@@ -11,7 +11,7 @@ const Tokenomics = ({ tokenomicsList }) => {
             className="border-[2px] border-primary-blue bg-black-1 py-[25px] px-[20px] rounded-[12px] flex items-center flex-col gap-[12px] justify-center"
           >
             {item.svg}
-            <h4 className="text-white text-[16px] font-semibold">
+            <h4 className="text-white text-[16px] font-semibold uppercase">
               {item.title}
             </h4>
             <p className="text-[14px] leading-[150%] text-neutral-white text-center">
