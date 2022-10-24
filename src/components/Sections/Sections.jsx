@@ -41,7 +41,7 @@ const Sections = () => {
             key={idx}
             className="grid grid-cols-2 gap-x-[60px] place-items-center lg:grid-cols-1 lg:gap-[30px] lg:place-items-center"
           >
-            <div className={`order-${item.content.order}`}>
+            <div style={{ order: `${item.content.order}` }}>
               {item.content.img ? (
                 <div
                   className={`pt-[8%] bg-center lg:w-full max-w-full bg-cover ${
@@ -61,7 +61,7 @@ const Sections = () => {
                 </p>
               </div>
             </div>
-            <div className={`order-${item.img.order}`}>
+            <div style={{ order: `${item.img.order}` }}>
               <Image
                 className="object-cover"
                 width={item.img.width}
