@@ -37,12 +37,12 @@ const Phases = ({ phasesList }) => {
       </div>
       <div className="mt-[60px] hidden grid-cols-1 md:grid">
         {phasesListMobile.map((item, idx) => (
-          <div key={idx} className="grid grid-cols-[1fr,2fr]">
+          <div key={idx} className="grid grid-cols-[1fr,2.3fr]">
             <div
               className="w-[80px] h-[424px] bg-contain bg-no-repeat "
               style={{ backgroundImage: `url(${item.img})` }}
             ></div>
-            <div className="flex flex-col">
+            <div className="flex flex-col lg:mt-[-7px]">
               <p className="text-white font-semibold mb-[20px]">
                 Phase {idx + 1}
               </p>

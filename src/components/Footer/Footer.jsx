@@ -11,7 +11,7 @@ const Footer = () => {
         }}
       >
         <div className="footer-overlay"></div>
-        <div className="container flex justify-between lg:static lg:translate-y-[8px] sm:flex-col mx-auto">
+        <div className="container flex justify-between sm:px-0 lg:translate-y-[0px] sm:flex-col mx-auto">
           <div className="text-white">
             {" "}
             Copyright Ⓒ{" "}
@@ -19,11 +19,11 @@ const Footer = () => {
               AptosMoon
             </span>{" "}
           </div>
-          <ul className="flex gap-[36px] items-center  z-[1] ">
+          <ul className="flex gap-[36px] items-center  z-[1] sm:mt-[4px]">
             {footerList.map((item, idx) => (
               <li key={idx} class>
                 <Link href="#">
-                  <a className="text-neutral-white hover:text-primary-blue duration-300 transition-300 ">
+                  <a className="text-neutral-white hover:text-primary-blue duration-300 transition-300 sm:text-[14px] ">
                     {" "}
                     {item}
                   </a>
