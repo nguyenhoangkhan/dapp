@@ -26,7 +26,9 @@ const Phases = ({ phasesList }) => {
               {item.list.map((item, idx) => (
                 <li key={idx} className="flex items-center gap-x-[8px]">
                   <div className="w-[6px] flex-shrink-0 flex-0 h-[6px] bg-primary-blue rounded-full"></div>
-                  <p className="text-[14px] text-white">{item}</p>
+                  <p className="text-[14px] text-white leading-[24px]">
+                    {item}
+                  </p>
                 </li>
               ))}
             </ul>
