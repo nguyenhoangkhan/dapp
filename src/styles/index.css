@@ -8,6 +8,22 @@ body {
   font-family: "Encode Sans", sans-serif;
   overflow-x: hidden;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #06d4bf;
+}
+
 @media (max-width: 1024px) {
   .lottie-rocket-banner > div {
     width: 450px !important;
