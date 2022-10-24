@@ -12,7 +12,7 @@ const Footer = () => {
       >
         <div className="footer-overlay"></div>
         <div className="container flex justify-between sm:px-0 lg:translate-y-[0px] sm:flex-col mx-auto">
-          <div className="text-white">
+          <div className="text-white sm:text-[14px]">
             {" "}
             Copyright Ⓒ{" "}
             <span className="text-primary-blue font-semibold">
